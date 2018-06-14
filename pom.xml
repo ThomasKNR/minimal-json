@@ -9,7 +9,6 @@
 
   <modules>
     <module>com.eclipsesource.json</module>
-    <module>com.eclipsesource.json.performancetest</module>
   </modules>
 
 </project>
