@@ -701,7 +701,10 @@ public class JsonObject extends JsonValue implements Iterable<Member> {
    */
   public String getString(String name, String defaultValue) {
     JsonValue value = get(name);
-    return value != null ? value.asString() : defaultValue;
+    if(value==null || value.isNull()){
+        return defaultValue;
+    }
+    return value.asString();
   }
 
   /**
