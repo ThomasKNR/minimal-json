@@ -77,6 +77,11 @@ class JsonNumber extends JsonValue {
   }
 
   @Override
+  public String asString() {
+    return string;
+  }
+
+  @Override
   public boolean equals(Object object) {
     if (this == object) {
       return true;
